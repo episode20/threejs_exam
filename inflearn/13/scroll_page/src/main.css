@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+/**
+	canvas mesh를 고정하기 위해 position: fixed를 사용함.
+*/
+#three-canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.sections {
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  box-sizing: border-box;
+  padding: 5rem;
+  height: 100vh;
+}
+/**
+	vmin -> vireport minimum
+	viewport -> 현재 브라우저 창사이즈
+	가로/세로중 작은길이를 기준으로 높이를 10으로 줌.
+*/
+.section h2 {
+  margin: 0;
+  font-size: 10vmin;
+}
+.section:nth-child(odd) {
+  text-align: right;
+}

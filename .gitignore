@@ -1,0 +1,18 @@
+# dependencies
+node_modules
+**/node_modules
+
+# testing
+/coverage
+/.coverage
+
+# production
+.next/
+
+# misc
+.env
+.env.*
+.idea/
+.vscode/
+npm-debug.log*
+.DS_Store

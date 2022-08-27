@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+/**
+	canvas mesh를 고정하기 위해 position: fixed를 사용함.
+*/
+#three-canvas {
+  position: fixed;
+  left: 20%;
+  top: 0;
+}
+.body-wrapper {
+  width: 100%;
+  /* border: 1px solid #ffffff; */
+}
+div.left {
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+div.right {
+  width: 70%;
+  float: right;
+  box-sizing: border-box;
+  background: #ece6cc;
+}
+
+.sections {
+  position: relative;
+  z-index: 1;
+  /* border: 3px solid red; */
+}
+
+.section {
+  box-sizing: border-box;
+  padding: 1rem;
+  height: 100vh;
+  /* border: 3px solid red; */
+}
+/**
+	vmin -> vireport minimum
+	viewport -> 현재 브라우저 창사이즈
+	가로/세로중 작은길이를 기준으로 높이를 10으로 줌.
+*/
+.section h2 {
+  margin: 0;
+  font-size: 8vmin;
+}
+.section:nth-child(odd) {
+  text-align: right;
+}
